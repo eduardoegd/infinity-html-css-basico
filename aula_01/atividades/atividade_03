@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Eduardo Gomes Dória</h1>
+    <p>Tenho 36 anos de idade, sou natural da cidade de Salvador/BA e me mudei para Fortaleza com a família
+    <br>durante a infância. A atualmente trabalho no setor de logística de uma fábrica, no cargo de faturista.
+    <br>Gosto de ver filmes, séries e livros, principalmente nos gêneros de terror/horror, ficção científica,
+    <br>suspenses psicológicos e policiais. Em 2024 resolvi ingressar na área de tecnologia e programação e
+    <br>como primeiro passo, me increvi no curso de Programação FUll Stack IA da escola Infinity.</p>
+    <p>Atualmente vivo na cidade de Fortaleza, em um bairro localização da região sul da cidade. Me mudei para cá
+    <br>a 27 anos, com a família.</p>
+    <h2>Alimento favorito</h2>
+    <p>Meu alimento favorito é moqueca de arraia, principalmente a preparada pelo meu pai. É um prato que remete
+    <br>a minha infância e também à minha cidade de origem.</p>
+</body>
+</html>
