@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-News</title>
+</head>
+<body>
+  <header>
+    <section id="home">
+      <h1>E-News</h1>
+      <h3>NOTÍCIAS & BLOG</h3>
+      <nav>
+        <ul>
+          <li><a href="#home">Início</a></li>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </nav>
+    </section>
+  </header>
+
+  <main>
+    <section id="news">
+      <article>
+        <h2>Game Awards 2024 elege 'Astro Bot' como jogo do ano; veja todos os vencedores</h2>
+        <h3>O jogo venceu em 4 categorias no total. 'Balantro' e 'Metaphor: ReFantazio' também foram destaques.</h3>
+        <p>"Astro Bot" foi o grande vencedor do Game Awards 2024, que ocorreu nesta quinta-feira (12), em Los Angeles. O jogo presta homenagem aos 30 anos do PlayStation e venceu em quatro categorias, incluindo a de jogo do ano.</p>
+      </article>
+    </section>
+  </main>
+
+  <section id="about">
+    <h2>Sobre nós</h2>
+    <p>E-News é um site de notícias com foco em entretenimento.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contato</h2>
+    <ul>
+      <li><strong>WhatsApp:</strong> +55 85 99999.9999</li>
+      <li><strong>E-mail:</strong> contato@enews.com</li>
+    </ul>
+    <p></p>
+  </section>
+
+  <aside>
+    <h3>Navegação</h3>
+    <ul>
+      <li><a href="#news">Notícias</a></li>
+      <li><a href="#ads">Anúncios</a></li>
+    </ul>
+  </aside>
+  
+  <footer>
+    <p>&copy; 2024 Infinity School. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
