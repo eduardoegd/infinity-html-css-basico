@@ -1,0 +1,16 @@
+.container {
+    width: 300px;
+    height: 200px;
+    margin: 20px;
+    background-color: lightgray;
+    position: relative;
+}
+
+.inner-box {
+    width: 150px;
+    height: 100px;
+    background-color: lightcoral;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}

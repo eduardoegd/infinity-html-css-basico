@@ -1,0 +1,14 @@
+.box {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: lightblue;
+}
+
+.hidden {
+    display: none;
+}
+
+.invisible {
+    visibility: hidden;
+}
