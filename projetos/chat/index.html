@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Chat Simples</title>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="header"></div>
+        
+        <div class="chat-header">
+            <span id="chat-day"></span> | <span id="chat-date"></span> | <span id="chat-time"></span>
+        </div>
+        
+        <div class="messages">
+            <div class="message">
+                <div class="user">
+                    <img src="https://via.placeholder.com/30" alt="Cecilia" class="profile-pic">
+                    <div>
+                        <span class="chat-name">Cecilia Sassaki</span>
+                        <span class="chat-time">11:30</span> <!-- Hora estática aqui -->
+                    </div>
+                </div>
+                <p class="message-content">Tive uma ideia incrível para um projeto! 😍</p>
+            </div>
+            <div class="message response">
+                <div class="user">
+                    <div>
+                        <span class="chat-name">Você</span>
+                        <span class="chat-time">11:30</span> <!-- Hora estática aqui -->
+                    </div>
+                </div>
+                <p class="message-content">Sério? Me conta mais.</p>
+            </div>
+            <div class="message">
+                <div class="user">
+                    <img src="https://via.placeholder.com/30" alt="Cecilia" class="profile-pic">
+                    <div>
+                        <span class="chat-name">Cecilia Sassaki</span>
+                        <span class="chat-time">11:36</span> <!-- Hora estática aqui -->
+                    </div>
+                </div>
+                <p class="message-content">E se a gente fizesse um chat moderno e responsivo em apenas uma semana?</p>
+            </div>
+            <div class="message response">
+                <div class="user">
+                    <div>
+                        <span class="chat-name">Você</span>
+                        <span class="chat-time">11:36</span> <!-- Hora estática aqui -->
+                    </div>
+                </div>
+                <p class="message-content">#boraCodar! 🚀</p>
+            </div>
+        </div>
+        
+        <div class="input-container">
+            <input type="text" class="message-input" placeholder="Digite sua mensagem...">
+        </div>
+    </div>
+    
+    <script>
+        // Script para exibir se é hoje ou ontem e a data e hora atual
+        const date = new Date();
+        const currentDate = new Date(date.toLocaleDateString('pt-BR'));
+
+        const options = { year: 'numeric', month: '2-digit', day: '2-digit' };
+        const yesterday = new Date();
+        yesterday.setDate(yesterday.getDate() - 1);
+
+        if (currentDate.toDateString() === yesterday.toDateString()) {
+            document.getElementById('chat-day').textContent = 'Ontem';
+        } else {
+            document.getElementById('chat-day').textContent = 'Hoje';
+        }
+
+        document.getElementById('chat-date').textContent = date.toLocaleDateString('pt-BR', options);
+        document.getElementById('chat-time').textContent = date.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' });
+    </script>
+</body>
+</html>

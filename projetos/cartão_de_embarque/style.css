@@ -1,0 +1,137 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #1a1a1a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 100px;
+}
+
+.boarding-pass {
+  background: linear-gradient(150deg, #a200ff, #460e7a);
+  color: black;
+  width: 320px;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+h1 {
+  color: whitesmoke; 
+  font-size: 20px;
+}
+
+.info-box {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 0px; /* Espaço reduzido entre caixas */
+  position: relative; /* Para linha tracejada */
+}
+
+.info-box:not(:last-child)::after {
+  content: ""; /* Criar uma linha tracejada */
+  display: block;
+  height: 1px; /* Espessura da linha */
+  background: transparent; /* Fundo transparente */
+  border-top: 1px dashed #aaa; /* Linha tracejada */
+  position: absolute; /* Posicionamento absoluto */
+  bottom: 0; /* Abaixo da caixa */
+  left: 0; /* Alinhado à esquerda */
+  right: 0; /* Alinhado à direita */
+}
+
+.flight-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px; /* Ajuste do espaçamento entre detalhes */
+}
+
+.details div {
+  text-align: center;
+}
+
+.locations {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.locations .arrow {
+  font-size: 24px;
+}
+
+.locations div {
+  font-size: 12px
+}
+  .locations .codes {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .details-bottom {
+    display: flex;
+    flex-direction: column; /* Alinha elementos um abaixo do outro */
+    align-items: flex-start; /* Alinha os itens à direita */
+  }
+  
+  .right-info {
+    text-align: left; /* Alinha texto à direita */
+  }
+  
+  .qr-container {
+    display: flex;
+    justify-content: flex-end; /* Alinha QR code à direita */
+    margin-top: 10px; /* Margem para separar o QR code */
+  }
+  
+  .large-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: black; /* Cor para boa visibilidade */
+  }
+  
+  .center {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+    color: whitesmoke; /* Cor mais clara para texto de aviso */
+  }
+  @media (max-width: 768px) {
+    .boarding-pass {
+      width: 95%; /* Largura para dispositivos menores */
+      padding: 15px; /* Menos padding em telas menores */
+    }
+    
+    .large-text {
+      font-size: 16px; /* Tamanho de fonte menor em telas pequenas */
+    }
+  
+    .details-bottom {
+      align-items: center; /* Centraliza os itens em telas menores */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .large-text {
+      font-size: 14px; /* Tamanho de fonte ainda menor */
+    }
+    
+    .details {
+      flex-direction: column; /* Muda a direção dos detalhes para coluna */
+      align-items: flex-start; /* Alinhamento à esquerda */
+    }
+  
+    .locations {
+      flex-direction: column; /* Coloca destinos um em cima do outro */
+      align-items: flex-start;
+    }
+  }

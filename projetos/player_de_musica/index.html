@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="music-player">
+        <img src="img/capa.png" height="250px" width="250px" alt="Capa do álbum">
+        <h3>Acorda Devinho</h3>
+        <p>Banda Rocketseat</p>
+        <div class="controls">
+            <button class="control-button">&#9664;&#9664;</button> <!-- Rewind -->
+            <button class="play-pause">&#9658;</button> <!-- Play -->
+            <button class="control-button">&#9658;&#9658;</button> <!-- Forward -->
+        </div>
+        <div class="progress-container">
+            <span>03:20</span>
+            <input type="range" min="0" max="100" value="12" class="progress-bar">
+            <span>00:12</span>
+        </div>
+    </div>
+</body>
+</html>

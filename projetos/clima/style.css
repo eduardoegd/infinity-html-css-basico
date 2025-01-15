@@ -1,0 +1,144 @@
+body {
+    font-family: 'Arial', sans-serif; 
+    background: linear-gradient(to bottom, #6f6ddb, #f0e0ff); 
+    margin: 0; 
+    padding: 0; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+}
+
+.container {
+    display: flex; 
+    justify-content: space-between; 
+    width: 70%; 
+}
+
+.main-card {
+    background-color: #6f6ddbbd; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+    padding: 20px; 
+    width: 300px; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.location {
+    align-self: flex-end;
+    font-size: 14px; 
+    color: #e7e5e5; 
+}
+
+h1 {
+    font-size: 4em; 
+    margin: 10px 0; 
+    color: #e7e5e5; 
+}
+
+.info-cards {
+    display: flex; 
+    justify-content: space-between; 
+    width: 100%; 
+    margin-top: 10px; 
+}
+
+.info-card {
+    background-color: #6f6ddb7e; 
+    border-radius: 10px; 
+    padding: 10px; 
+    flex: 1; 
+    margin: 2px;
+    text-align: center; 
+    font-size: 12px; 
+    color: #e7e5e5; 
+}
+
+.forecast-container {
+    display: flex; 
+    flex-direction: column; 
+    margin-left: 20px; 
+}
+
+.forecast-top {
+    display: flex; 
+    justify-content: space-between; 
+    margin-bottom: 10px; 
+}
+
+.forecast-card {
+    background-color: #6f6ddb71; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+    padding: 25px; 
+    margin: 0 30px; 
+    text-align: center; 
+    flex: 1; 
+    color:#e7e5e5
+}
+
+.gas-info {
+    display: flex; 
+    font-size: 10px;
+    justify-content: center; 
+    margin-top: 10px; 
+    color: #e7e5e5; 
+}
+
+.daily-forecast {
+    display: flex; 
+    justify-content: space-between; 
+    margin-top: 10px; 
+}
+
+.day-info {
+    flex: 1; 
+    text-align: center; 
+    font-size: 11px; 
+}
+
+.day-info p {
+    margin: 0; 
+    color: #e7e5e5; 
+}h2 {
+    font-size: 1.5em; 
+    margin: 0; 
+}
+
+p {
+    margin: 5px 0; 
+}
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column; 
+        align-items: center; 
+        width: 90%; 
+    }
+
+    .main-card, .forecast-card {
+        width: 90%; 
+        margin-bottom: 20px; 
+    }
+
+    h1 {
+        font-size: 3em; 
+    }
+
+    .info-card {
+        font-size: 11px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .info-cards {
+        flex-direction: column; 
+    }
+
+    .info-card {
+        margin: 5px 0; 
+    }
+}
+
+

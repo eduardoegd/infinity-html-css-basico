@@ -1,0 +1,158 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; 
+}
+
+main {
+    display: flex;
+    flex: 1;
+    justify-content: flex-start; 
+}
+
+.card {
+    background-color: #fff; 
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px; 
+}
+
+.sidebar {
+    width: 200vh;
+    background-color: #6200ea; 
+    color: #fff; 
+    height: 100vh; /* Ocupa toda a altura da página */
+    position: fixed; /* Fixa a sidebar na sua posição */
+    z-index: 0; /* Define um z-index menor para que fique atrás */
+    opacity: 0.9; /* Levemente transparente se desejar */
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin: 10px 0;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #c4bec7; 
+}
+
+.sidebar a:hover {
+    color: #ffffff; 
+}
+
+.content {
+    flex: 1;
+    margin-left: 220px; /* Ajuste do espaço para a sidebar */
+    display: flex;
+    flex-direction: column; 
+    z-index: 1; /* Define um z-index maior para que fique na frente */
+    position: relative; /* Necessário para controlar o z-index */
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    width: calc(100% - 40px); 
+}
+
+.search-container button {
+    padding: 10px;
+    border: none;
+    background-color: #6200ea; 
+    color: white; 
+    border-radius: 3px;
+    cursor: pointer;
+    margin-right: 10px; 
+}
+
+.search-container input {
+    flex: 1; 
+    padding: 10px;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+}
+
+.kanban-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    background-color: #fff; 
+    border: 1px solid white;
+    padding: 10px;
+    flex: 1;
+    margin: 0 10px; 
+}
+
+h3 {
+    text-align: left;
+    color: black;
+}
+
+.task {
+    background-color: white; 
+    margin: 10px 0;
+    padding: 10px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.task p {
+    font-size: 0.8em; /* Diminuir o tamanho da fonte */
+    line-height: 1.8; /* Ajustar altura da linha */
+    margin: 5px 0; /* Margem para os parágrafos */
+}
+
+.task:hover {
+    background-color: #d1c4e9; 
+}
+
+.task-button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #6200ea4b; 
+    color: #6200ea7e; 
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 5px; 
+}
+
+.task-button:hover {
+    background-color: #764bce; 
+}
+
+@media (max-width: 480px) {
+    .sidebar {
+        display: none; /* Oculta a sidebar em telas muito pequenas */
+    }
+
+    .content {
+        margin-left: 0; /* Remove a margem à esquerda quando a sidebar está oculta */
+    }
+
+    .search-container {
+        width: 100%; /* Aumenta a largura da barra de pesquisa */
+    }
+
+    .kanban-container {
+        flex-direction: column; /* Empilha as colunas verticalmente */
+    }
+
+    .column {
+        margin: 10px 0; /* Margem entre as colunas empilhadas */
+    }
+}
