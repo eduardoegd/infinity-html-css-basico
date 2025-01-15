@@ -1,0 +1,61 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+}
+
+.header, .footer {
+    background-color: #4A90E2;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.main {
+    background-color: #F5F7FA;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+.main h1 {
+    color: #4A90E2;
+}
+
+.text {
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: justify;
+}
+
+.text::before {
+    content: "Início: ";
+    color: #4A90E2;
+    margin-right: 5px;
+}
+
+.text::after {
+    content: " Fim.";
+    color: #4A90E2;
+    margin-left: 5px;
+}
+
+.footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer small {
+    display: block;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #ccc;
+}
