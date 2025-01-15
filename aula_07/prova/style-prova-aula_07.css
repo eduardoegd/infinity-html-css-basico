@@ -1,0 +1,75 @@
+:root {
+    --font-size-small: 14px;
+    --spacing-small: 10px;
+    --font-size-medium: 18px;
+    --spacing-medium: 20px;
+    --font-size-large: 24px;
+    --spacing-large: 30px;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #F5F7FA;
+    color: #333333;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+}
+
+.header, .footer {
+    background-color: #4A90E2;
+    color: white;
+    padding: var(--spacing-medium);
+    text-align: center;
+}
+
+.main {
+    background-color: #F5F7FA;
+    color: #333;
+    padding: var(--spacing-medium);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--font-size-medium);
+}
+
+@media (max-width: 600px) {
+    :root {
+        --font-size-small: 12px;
+        --spacing-small: 8px;
+        --font-size-medium: 14px;
+        --spacing-medium: 12px;
+        --font-size-large: 20px;
+        --spacing-large: 25px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    :root {
+        --font-size-small: 14px;
+        --spacing-small: 10px;
+        --font-size-medium: 18px;
+        --spacing-medium: 20px;
+        --font-size-large: 24px;
+        --spacing-large: 30px;
+    }
+}
+
+@media (min-width: 1025px) {
+    :root {
+        --font-size-small: 16px;
+        --spacing-small: 12px;
+        --font-size-medium: 20px;
+        --spacing-medium: 25px;
+        --font-size-large: 28px;
+        --spacing-large: 35px;
+    }
+}
