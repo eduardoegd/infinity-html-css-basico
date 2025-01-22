@@ -1,0 +1,169 @@
+:root {
+    --primary: #e53f2e;
+    --secondary: #95989a;
+    --text-color: #fff;
+    --text-secondary: #000;
+    --text-tertiary: #5d5d5d;
+}
+
+* {
+    font-family: "Montserrat";
+    margin: 0;
+    padding: 0;
+}
+
+/* event form */
+#event-subscription {
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),url('../img/hrz-4.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 85vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--text-color);
+}
+
+#disclaimer h2,
+#disclaimer .event-date {
+    color: var(--primary);
+}
+
+#disclaimer h2 {
+    font-size: 3em;
+    margin-bottom: 0.3em;
+}
+
+#disclaimer .about-event {
+    font-size: 2em;
+    text-transform: uppercase;
+    max-width: 350px;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+#disclaimer p {
+    font-size: 1.2em;
+    margin-bottom: 0.3em;
+}
+
+#disclaimer .event-date {
+    font-weight: bold;
+}
+
+
+/*formulário*/
+#subscription-form {
+    background-color: var(--secondary);
+    padding: 2em;
+    max-width: 22%;
+}
+
+#subscription-form {
+    font-size: 1.8em;
+    color: var(--text-secondary);
+    margin-bottom: 1em;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.8em;
+}
+
+.form-group label {
+    color: var(--text-tertiary);
+    margin-bottom: 0.3em;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    padding: 6px 8px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+
+/* button */
+.btn {
+    background-color: var(--primary);
+    color: var(--text-color);
+    text-transform: uppercase;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    transition: .4s;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: var(--text-color);
+    color: var(--primary);
+    border: 1px solid var(--primary);
+}
+
+/* location */
+#location {
+    height: 400px;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8));
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--text-color);
+    margin-bottom: 3em;
+}
+
+#address, #about-location {
+    max-width: 30%;
+}
+
+#address {
+    display: flex;
+}
+
+#address i {
+    font-size: 4em;
+    color: var(--primary);
+    margin-right: 0.5em;
+}
+
+#address-details {
+    text-align: center;
+    font-size: 1.3em;
+}
+
+#about-location h3 {
+    color: var(--primary);
+    font-size: 2.5rem;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+}
+
+#about-location p {
+    line-height: 1.5em;
+}
+
+/* footer */
+#footer {
+    text-align: center;
+    color: var(--secondary);
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#footer h3 {
+    font-size: 1.8em;
+    margin-bottom: 0.5em;
+}
+
+#footer p:nth-child(2) {
+    margin-bottom: 1em;
+    font-size: 1.2em;
+}
