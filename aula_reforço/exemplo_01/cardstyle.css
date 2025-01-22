@@ -1,0 +1,28 @@
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: azure;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto", serif;
+    gap: 2rem;
+}
+
+.card {
+    min-height: 300px;
+    width: 325px;
+    background-color: rgb(34, 32, 32);
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px black;
+
+    & img:first-of-type {
+        border-radius: 8px;
+        width: 100%;
+    }
+
+    & div:first-of-type {
+        padding: 0px 1rem;
+    }
+}
